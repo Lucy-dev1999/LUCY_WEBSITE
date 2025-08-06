@@ -1,0 +1,46 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.button {
+    background-color: #00ff00;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #00cc00;
+}
+
+/* For input elements styled as buttons */
+input[type="submit"],
+input[type="button"],
+button {
+    background-color: #00ff00;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover {
+    background-color: #00cc00;
+}
