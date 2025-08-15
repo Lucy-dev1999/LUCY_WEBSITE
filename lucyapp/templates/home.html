@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<br>
+<br>
+<br>
+
+<div class="hero-section">
+    <div class="hero-content">
+        <h1>Hi, I'm Ainembabazi Lucia Rachel</h1>
+        <div class="job-title">Fullstack Developer</div>
+        <p class="description">
+            I'm a Junior Software Engineer, more profficient in backend development and passionate about building the core functionality of web applications.
+            I specialize in Python and Django, and I enjoy designing database schemas, building REST APIs, and optimizing server-side logic.
+        </p>
+        <p class="description">
+            I'm looking for internship or junior developer roles where I can learn from experienced engineers, grow my skills, and contribute to meaningful software.
+        </p>
+        <div class="cta-buttons">
+            <a href="{% url 'contact' %}" class="btn primary">Hire Me</a>
+            <a href="{% url 'contact' %}" class="btn secondary">Let's Talk</a>  
+        </div>
+    </div>
+</div>
+{% endblock %}
