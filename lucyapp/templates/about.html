@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="hero-section">
+    <div class="hero-content">
+        <h1>About Me</h1>
+        <div class="job-title">Backend Developer & Software Engineer</div>
+        
+        <div class="about-section">
+            <div class="description">
+                <p>Hello! I'm Ainembabazi Lucia Rachel, a passionate Backend Developer with expertise in Python and Django. 
+                    I focus on building robust and scalable web applications with clean, efficient code.</p>
+            </div>
+
+            <div class="skills-section">
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <ul>
+                            <li><i class="fab fa-python"></i> Python</li>
+                            <li><i class="fab fa-js"></i> JavaScript</li>
+                            <li><i class="fas fa-database"></i> SQL</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Frameworks & Tools</h3>
+                        <ul>
+                            <li><i class="fab fa-python"></i> Django</li>
+                            <li><i class="fas fa-database"></i> PostgreSQL</li>
+                            <li><i class="fab fa-git-alt"></i> Git</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-section">
+                <h2>Experience & Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>Backend Developer Intern</h3>
+                        <p class="date">2024 - Present</p>
+                        <p>Working on developing and maintaining REST APIs using Django REST framework.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Computer Science Degree</h3>
+                        <p class="date">2020 - 2024</p>
+                        <p>Studied Computer Science with focus on software development and databases.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="{% url 'contact' %}" class="btn primary">Hire Me</a>
+                <a href="#" class="btn secondary">Download CV</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
