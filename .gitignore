@@ -1,0 +1,19 @@
+# Django
+*.pyc
+__pycache__/
+db.sqlite3
+*.log
+
+# Local settings (contains sensitive email credentials)
+website/local_settings.py
+
+# Static files
+staticfiles/
+
+# Virtual environment
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
