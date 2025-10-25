@@ -1,14 +1,18 @@
-# Email settings
+# Local settings for email configuration
+# Keep this file secure and don't commit it to version control
+
+# Email Configuration for Gmail
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'ainembabaziluciarachel02@gmail.com'  # Replace with your Gmail address
-EMAIL_HOST_PASSWORD = 'iloveyoujesus'  # Replace with your Gmail app password
-DEFAULT_FROM_EMAIL = 'ainembabaziluciarachel02@gmail.com'  # Replace with your Gmail address
-CONTACT_EMAIL = 'ainembabaziluciarachel02@gmail.com'  # Replace with your contact email
+EMAIL_HOST_USER = 'ainembabaziliciarachel02@gmail.com'  # Your Gmail address
+EMAIL_HOST_PASSWORD = 'your-app-password-here'  # Replace with your Gmail App Password
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
-# Security settings
-SECURE_SSL_REDIRECT = False  # Set to True in production
-SESSION_COOKIE_SECURE = False  # Set to True in production
-CSRF_COOKIE_SECURE = False  # Set to True in production
+# To get your Gmail App Password:
+# 1. Go to your Google Account settings
+# 2. Enable 2-Step Verification if not already enabled
+# 3. Go to Security > 2-Step Verification > App passwords
+# 4. Generate a new app password for "Mail"
+# 5. Copy the 16-character password and paste it above
