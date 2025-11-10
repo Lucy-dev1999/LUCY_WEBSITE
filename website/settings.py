@@ -124,22 +124,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = '/static/'
-
-if DEBUG:
-    STATICFILES_DIRS = [
-        BASE_DIR / 'lucyapp' / 'static',
-    ]
-else:
-    STATICFILES_DIRS = []
-
+STATICFILES_DIRS = [
+    BASE_DIR / 'lucyapp' / 'static',
+]
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # WhiteNoise configuration for static files
-STORAGES = {
-    "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
-    },
-}
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
