@@ -40,14 +40,11 @@ Message:
             )
             
             messages.success(request, "Thank you for your message! I'll get back to you soon.")
-            return redirect('contact')
+            return redirect('home')
             
         except Exception as e:
+            print(f"Email error: {str(e)}")  # This will show in your terminal
             messages.error(request, f"Sorry, there was an error sending your message. Please try again later.")
-            return render(request, 'contact.html', {
-                'name': name,
-                'email': email,
-                'message': message_text,
-            })
+            return redirect('home')
     
-    return render(request, 'contact.html')
+    return redirect('home')
