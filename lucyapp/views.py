@@ -35,7 +35,7 @@ Message:
                 subject,
                 email_body,
                 settings.EMAIL_HOST_USER,  # From email
-                ['ainembabaziliciarachel02@gmail.com'],  # Your email
+                ['ainembabaziluciarachel02@gmail.com'],  # Your email
                 fail_silently=False,
             )
             
