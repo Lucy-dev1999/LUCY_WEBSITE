@@ -40,9 +40,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: 
-        radial-gradient(circle at 20% 50%, rgba(0, 229, 255, 0.05) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(0, 184, 212, 0.05) 0%, transparent 50%);
+    background: #ffffff;
     pointer-events: none;
     z-index: 0;
 }
@@ -61,11 +59,11 @@ body::before {
     top: 2rem;
     right: 4rem;
     z-index: 1000;
-    background: rgba(0, 18, 32, 0.8);
+    background: rgba(0, 229, 255, 0.1);
     backdrop-filter: blur(10px);
     padding: 1rem 2rem;
     border-radius: 50px;
-    border: 1px solid rgba(0, 229, 255, 0.1);
+    border: 1px solid rgba(0, 229, 255, 0.3);
 }
 
 .nav-links {
@@ -136,7 +134,7 @@ body::before {
 
 .hero-image {
     flex: 0 0 auto;
-    max-width: 440px;
+    max-width: 350px;
     animation: fadeInRight 1s ease-out 0.3s both;
     position: relative;
 }
@@ -160,7 +158,7 @@ body::before {
     right: 20px;
     bottom: 20px;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    border-radius: 10px;
+    border-radius: 50%;
     z-index: -1;
     opacity: 0.3;
     filter: blur(20px);
@@ -169,7 +167,7 @@ body::before {
 .hero-image img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 50%;
     box-shadow: 0 20px 60px rgba(0, 229, 255, 0.3);
     transition: transform 0.3s ease;
 }
@@ -327,9 +325,9 @@ h1 {
 .footer {
     padding: 1.5rem;
     text-align: center;
-    background: #0a1929;
+    background: #ffffff;
     color: var(--text-color);
-    border-top: 1px solid rgba(0, 229, 255, 0.1);
+    border-top: 1px solid rgba(0, 229, 255, 0.3);
     margin: 0;
 }
 
@@ -462,22 +460,23 @@ section {
     position: relative;
     z-index: 1;
     margin: 0;
+    background: #ffffff;
 }
 
 .about-section-full {
-    background: rgba(0, 18, 32, 0.5);
+    background: #ffffff;
 }
 
 .projects-section-full {
-    background: rgba(0, 40, 64, 0.3);
+    background: #ffffff;
 }
 
 .experience-section-full {
-    background: rgba(0, 18, 32, 0.5);
+    background: #ffffff;
 }
 
 .contact-section-full {
-    background: rgba(0, 18, 32, 0.5);
+    background: #ffffff;
 }
 
 .section-title {
