@@ -2,10 +2,10 @@
     --primary-color: #00E5FF;
     --secondary-color: #00B8D4;
     --accent-color: #FF6B9D;
-    --background-color: #001220;
-    --background-gradient: linear-gradient(135deg, #001220 0%, #002840 100%);
-    --text-color: #ffffff;
-    --text-secondary: #B0BEC5;
+    --background-color: #ffffff;
+    --background-gradient: #ffffff;
+    --text-color: #000000;
+    --text-secondary: #666666;
 }
 
 * {
@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    background: var(--background-gradient);
+    background: #ffffff;
     color: var(--text-color);
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
